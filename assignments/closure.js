@@ -1,9 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-function store() {
-  let bags = 3;
-  function stock() {}
+function parent() {
+  console.log(`I am the parent`);
+  const parentText = "do your homework";
+  function child() {
+    const say = "I want candy";
+    console.log(`My parent told me to: ${parentText}`);
+  }
+  child();
 }
+parent();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
