@@ -26,7 +26,7 @@ const items = ["Pencil", "Notebook", "yo-yo", "Gum"];
 //PROBLEM 1
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
-  cb(arr.length);
+  return cb(arr.length);
 }
 
 getLength(items, function(length) {
@@ -36,7 +36,7 @@ getLength(items, function(length) {
 //PROBLEM 2
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
-  cb(arr.pop());
+  return cb(arr.pop());
 }
 
 last(items, function(lastArr) {
@@ -44,25 +44,23 @@ last(items, function(lastArr) {
 });
 
 //PROBLEM 3
-// function sumNums(x, y, cb) {
-//   // sumNums adds two numbers (x, y) and passes the result to the callback.
-//   let add = x + y;
-//   cb(add);
-// }
+function sumNums(x, y, cb) {
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x + y);
+}
 
-// sumNums(items, function(sum) {});
+sumNums(3, 4, function(add) {
+  console.log(add);
+});
 
 //PROBLEM 5
-// function multiplyNums(x, y, cb) {
-//   // multiplyNums multiplies two numbers and passes the result to the callback.
-//   cb(function(x, y) {
-//     x * y;
-//   });
-// }
-
-// multiplyNums(items, function(multi) {
-//   console.log(multi);
-// });
+function multiplyNums(x, y, cb) {
+  // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
+}
+multiplyNums(4, 6, function(sum) {
+  console.log(sum);
+});
 
 //PROBLEM 6
 function contains(item, list, cb) {
