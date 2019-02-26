@@ -53,16 +53,16 @@ last(items, function(lastArr) {
 // sumNums(items, function(sum) {});
 
 //PROBLEM 5
-function multiplyNums(x, y, cb) {
-  // multiplyNums multiplies two numbers and passes the result to the callback.
-  cb(function(x, y) {
-    x * y;
-  });
-}
+// function multiplyNums(x, y, cb) {
+//   // multiplyNums multiplies two numbers and passes the result to the callback.
+//   cb(function(x, y) {
+//     x * y;
+//   });
+// }
 
-multiplyNums(items, function(multi) {
-  console.log(multi);
-});
+// multiplyNums(items, function(multi) {
+//   console.log(multi);
+// });
 
 //PROBLEM 6
 function contains(item, list, cb) {
