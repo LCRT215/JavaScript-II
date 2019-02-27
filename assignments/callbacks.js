@@ -63,10 +63,14 @@ multiplyNums(4, 6, function(sum) {
 });
 
 //PROBLEM 6
-function contains(item, list, cb) {
+function contains(items, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return cb(items.includes(list));
 }
+contains(items, "yo-yo", function(check) {
+  console.log(check);
+});
 
 /* STRETCH PROBLEM */
 
